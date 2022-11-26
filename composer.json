@@ -1,0 +1,19 @@
+{
+    "name": "aaronneondigital/livewire-tables",
+    "description": "Simple livewire tables",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "AaronNeonDigital\\LivewireTables\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Aaron",
+            "email": "aaron@neondigital.co.uk"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
