@@ -17,7 +17,7 @@ class LivewireTablesServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->loadViewsFrom(__DIR__.'/../views', 'livewire-tables');
-    
+
 
         Livewire::component('column', Column::class);
         Livewire::component('number-column', NumberColumn::class);

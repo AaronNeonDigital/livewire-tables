@@ -4,7 +4,7 @@ namespace AaronNeonDigital\LivewireTables\Tables\Columns;
 
 class NumberColumn extends \AaronNeonDigital\LivewireTables\Tables\Column
 {
-    public string $component = 'livewire-tables::columns.number-column';
+    public string $component = 'columns.number-column';
 
     public ?int $format = null;
 
