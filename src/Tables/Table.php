@@ -32,7 +32,8 @@ abstract class Table extends Component
             ->paginate($this->perPage);
     }
 
-    public function sort($key) {
+    public function sort($key)
+    {
         $this->resetPage();
 
         if ($this->sortBy === $key) {
