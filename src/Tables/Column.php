@@ -21,8 +21,12 @@ abstract class Column
         $this->label = $label;
     }
 
-    public static function make($key, $label): static
+    public static function make($key, $label = ''): static
     {
+        if(empty($label)) {
+            $label = ucwords(str_replace('_', ' ', $key));
+        }
+
         return new static($key, $label);
     }
 
