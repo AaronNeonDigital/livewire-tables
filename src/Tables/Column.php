@@ -5,14 +5,29 @@ namespace AaronNeonDigital\LivewireTables\Tables;
 abstract class Column
 {
     /**
-     * @var string Default column
+     * @var string
+     * @description Default column, can be changed by using the component() function and specifying component's livewire
+     * path
      */
+
     public string $component = 'columns.column';
 
+    /**
+     * @var string
+     * @description key value of the field you want to apply to the table.
+     */
     public string $key;
 
-    public string $label;
+    /**
+     * @var string|null
+     * @description label can be null,and in return will us camel cased key and apply laravel format string conversion.
+     */
+    public ?string $label;
 
+    /**
+     * @var bool
+     * @description sortable bool, which toggles the ability to add column to the sortable's
+     */
     public bool $sortable = false;
 
     public function __construct($key, $label)
@@ -30,12 +45,24 @@ abstract class Column
         return new static($key, $label);
     }
 
+    /**
+     * @param $component
+     * @return $this
+     * @description Allows you to specify your own component.
+     */
+
     public function component($component): static
     {
         $this->component = $component;
 
         return $this;
     }
+
+    /**
+     * @return $this
+     * @description Toggles column as a sortable column
+     * @default false
+     */
 
     public function sortable(): static
     {
