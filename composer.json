@@ -1,7 +1,6 @@
 {
     "name": "aaronneondigital/livewire-tables",
     "description": "Simple livewire tables",
-    "type": "project",
     "license": "MIT",
     "autoload": {
         "psr-4": {
@@ -15,5 +14,7 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "livewire/livewire": "^2.0"
+    }
 }
