@@ -1,8 +1,8 @@
 <?php
 
-namespace AaronNeonDigital\LivewireTables\Tables\Columns;
+namespace AaronNeonDigital\LivewireTables\Columns;
 
-class Column extends \AaronNeonDigital\LivewireTables\Tables\Column
+class Column extends \AaronNeonDigital\LivewireTables\Column
 {
     public string $component = 'livewire-tables::columns.column';
 
