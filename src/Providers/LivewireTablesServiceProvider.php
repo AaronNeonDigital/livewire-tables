@@ -2,9 +2,9 @@
 
 namespace AaronNeonDigital\LivewireTables\Providers;
 
-use AaronNeonDigital\LivewireTables\Columns\Column;
-use AaronNeonDigital\LivewireTables\Columns\NumberColumn;
-use AaronNeonDigital\LivewireTables\Table;
+use AaronNeonDigital\LivewireTables\Views\Components\Columns\Column;
+use AaronNeonDigital\LivewireTables\Views\Components\Columns\NumberColumn;
+use AaronNeonDigital\LivewireTables\Views\Components\Table;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
