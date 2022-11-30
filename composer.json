@@ -16,5 +16,12 @@
     "minimum-stability": "dev",
     "require": {
         "livewire/livewire": "^2.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Aaronneondigital\\LivewireTables\\LivewireTablesServiceProvider"
+            ]
+        }
     }
 }
