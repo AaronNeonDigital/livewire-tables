@@ -4,6 +4,7 @@ namespace AaronNeonDigital\LivewireTables\Providers;
 
 use AaronNeonDigital\LivewireTables\Tables\Columns\Column;
 use AaronNeonDigital\LivewireTables\Tables\Columns\NumberColumn;
+use AaronNeonDigital\LivewireTables\Tables\Table;
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
 
@@ -21,5 +22,6 @@ class LivewireTablesServiceProvider extends ServiceProvider
 
         Livewire::component('columns.column', Column::class);
         Livewire::component('columns.number-column', NumberColumn::class);
+        Livewire::component('table', Table::class);
     }
 }
