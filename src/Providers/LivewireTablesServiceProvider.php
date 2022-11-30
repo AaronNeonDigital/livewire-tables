@@ -24,10 +24,12 @@ class LivewireTablesServiceProvider extends ServiceProvider
 
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'livewire-tables');
 
-        $this->publishes([
-            $this->root.'/src/Views/Components/' => app_path('View/Components'),
-            $this->root.'/resources/views/components/' => resource_path('views/components'),
-        ], 'views');
+        if ($this->app->runningInConsole()) {
+            $this->publishes([
+                $this->root . '/src/Views/Components/' => app_path('View/Components'),
+                $this->root . '/resources/views/components/' => resource_path('views/components'),
+            ], 'views');
+        }
 
         Livewire::component('columns.column', Column::class);
         Livewire::component('columns.number-column', NumberColumn::class);
