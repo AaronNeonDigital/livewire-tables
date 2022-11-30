@@ -2,7 +2,7 @@
 
 namespace AaronNeonDigital\LivewireTables\Views\Components\Columns;
 
-use AaronNeonDigital\LivewireTables\Column;
+use AaronNeonDigital\LivewireTables\Views\Components\Column;
 
 class NumberColumn extends Column
 {

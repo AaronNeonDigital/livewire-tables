@@ -23,9 +23,9 @@ class LivewireTablesServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'livewire-tables');
 //        $this->loadViewsFrom(__DIR__.'/views', 'livewire-tables');
 
-        Livewire::component('tables.columns.column', Column::class);
-        Livewire::component('tables.columns.number-column', NumberColumn::class);
-        Livewire::component('tables.table', Table::class);
+        Livewire::component('columns.column', Column::class);
+        Livewire::component('columns.number-column', NumberColumn::class);
+        Livewire::component('table', Table::class);
 
         // Blade Components
         Blade::componentNamespace('AaronNeonDigital\\LivewireTables\\views', 'livewire-tables');
