@@ -11,6 +11,8 @@ use Livewire\Livewire;
 
 class LivewireTablesServiceProvider extends ServiceProvider
 {
+    protected $root = __DIR__ . '/..';
+
     /**
      * Bootstrap services.
      *
@@ -21,7 +23,11 @@ class LivewireTablesServiceProvider extends ServiceProvider
 //        $this->loadViewsFrom(__DIR__.'/../resources/views', 'l-tables');
 
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'livewire-tables');
-//        $this->loadViewsFrom(__DIR__.'/views', 'livewire-tables');
+
+        $this->publishes([
+            $this->root.'/src/View/Components/' => app_path('View/Components'),
+            $this->root.'/resources/views/components/' => resource_path('views/components'),
+        ], 'views');
 
         Livewire::component('columns.column', Column::class);
         Livewire::component('columns.number-column', NumberColumn::class);
