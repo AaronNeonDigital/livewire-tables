@@ -20,7 +20,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Aaronneondigital\\LivewireTables\\LivewireTablesServiceProvider"
+                "AaronNeonDigital\\LivewireTables\\LivewireTablesServiceProvider"
             ]
         }
     }
