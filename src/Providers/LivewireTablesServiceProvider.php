@@ -18,8 +18,13 @@ class LivewireTablesServiceProvider extends ServiceProvider
     {
         $this->loadViewsFrom(__DIR__.'/../views', 'livewire-tables');
 
+        $components = [
+            Column::class,
+            NumberColumn::class,
+        ];
 
-        Livewire::component('livewire-tables::column', Column::class);
-        Livewire::component('livewire-tables.columns.number-column', NumberColumn::class);
+        foreach ($components as $component) {
+            Livewire::component((new $component)->getName(), $component);
+        }
     }
 }
