@@ -20,6 +20,6 @@ class LivewireTablesServiceProvider extends ServiceProvider
 
 
         Livewire::component('livewire-tables::column', Column::class);
-        Livewire::component('livewire-tables::number-column', NumberColumn::class);
+        Livewire::component('livewire-tables.columns.number-column', NumberColumn::class);
     }
 }
