@@ -25,7 +25,7 @@ class LivewireTablesServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'livewire-tables');
 
         $this->publishes([
-            $this->root.'/src/View/Components/' => app_path('View/Components'),
+            $this->root.'/src/Views/Components/' => app_path('View/Components'),
             $this->root.'/resources/views/components/' => resource_path('views/components'),
         ], 'views');
 
