@@ -26,6 +26,6 @@ class LivewireTablesServiceProvider extends ServiceProvider
         Livewire::component('table', Table::class);
 
         // Blade Components
-        Blade::componentNamespace('Aaronneondigital\\LivewireTables\\src\\views', 'livewire-tables');
+        Blade::componentNamespace('Aaronneondigital\\LivewireTables\\views', 'livewire-tables');
     }
 }
