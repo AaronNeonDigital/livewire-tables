@@ -1,6 +1,6 @@
 <?php
 
-namespace AaronNeonDigital\LivewireTables;
+namespace AaronNeonDigital\LivewireTables\Views\Components;
 
 abstract class Column
 {

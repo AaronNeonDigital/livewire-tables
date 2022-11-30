@@ -1,6 +1,6 @@
 <?php
 
-namespace AaronNeonDigital\LivewireTables\Columns;
+namespace AaronNeonDigital\LivewireTables\Views\Components\Columns;
 
 use AaronNeonDigital\LivewireTables\Column;
 

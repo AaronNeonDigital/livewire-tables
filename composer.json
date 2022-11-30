@@ -17,11 +17,4 @@
             "AaronNeonDigital\\LivewireTables\\" : "src/"
         }
     },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "AaronNeonDigital\\LivewireTables\\LivewireTablesServiceProvider"
-            ]
-        }
-    }
 }

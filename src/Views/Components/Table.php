@@ -1,6 +1,6 @@
 <?php
 
-namespace AaronNeonDigital\LivewireTables;
+namespace AaronNeonDigital\LivewireTables\Views\Components;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Contracts\View\View;
 use Illuminate\Database\Eloquent\Builder;
