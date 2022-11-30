@@ -2,11 +2,6 @@
     "name": "aaronneondigital/livewire-tables",
     "description": "Simple livewire tables",
     "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "AaronNeonDigital\\LivewireTables\\": "src/"
-        }
-    },
     "authors": [
         {
             "name": "Aaron",
@@ -16,6 +11,11 @@
     "minimum-stability": "dev",
     "require": {
         "livewire/livewire": "^2.0"
+    },
+    "autoload" : {
+        "psr-4": {
+            "AaronNeonDigital\\LivewireTables\\" : "src/"
+        }
     },
     "extra": {
         "laravel": {
