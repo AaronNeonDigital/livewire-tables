@@ -6,7 +6,7 @@ use AaronNeonDigital\LivewireTables\Views\Components\Column;
 
 class NumberColumn extends Column
 {
-    public string $component = 'livewire-tables::columns.number-column';
+    public string $component = 'columns.number-column';
 
     public ?int $format = null;
 
