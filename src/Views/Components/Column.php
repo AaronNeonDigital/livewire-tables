@@ -71,4 +71,9 @@ abstract class Column
         return $this;
     }
 
+    public function render()
+    {
+        return view('livewire-tables::'.$this->component);
+    }
+
 }
