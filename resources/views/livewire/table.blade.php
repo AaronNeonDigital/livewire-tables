@@ -47,7 +47,7 @@
                             <td class="whitespace-nowrap px-2 py-2 text-sm text-gray-900">
                                 <div class="flex items-center cursor-pointer">
                                     <x-dynamic-component
-                                        :component="$column->component"
+                                        :component="'livewire-tables::'.$column->component"
                                         :value="$row[$column->key]"
                                         :format="$column->format ?? null"
                                     >
