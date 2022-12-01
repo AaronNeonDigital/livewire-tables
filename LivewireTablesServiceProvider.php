@@ -1,6 +1,6 @@
 <?php
 
-namespace AaronNeonDigital\LivewireTables\Providers;
+namespace AaronNeonDigital\LivewireTables;
 
 use AaronNeonDigital\LivewireTables\Http\Livewire\Table;
 use Illuminate\Support\Facades\Blade;
