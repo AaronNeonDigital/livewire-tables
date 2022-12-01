@@ -49,6 +49,6 @@ abstract class Table extends Component
 
     public function render(): View
     {
-        return view('storefront::livewire.table');
+        return view('livewire-tables::livewire.table');
     }
 }
