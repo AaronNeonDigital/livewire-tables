@@ -10,7 +10,7 @@ abstract class Column
      * path
      */
 
-    public string $component = 'livewire-tables::columns.column';
+    public string $component = 'columns.column';
 
     /**
      * @var string

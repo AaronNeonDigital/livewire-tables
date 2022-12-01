@@ -18,8 +18,8 @@ class LivewireTablesServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-
-        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'livewire-tables');
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'livewire-tables');
+//        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'livewire-tables');
 
         $this->registerLivewireComponents();
     }
