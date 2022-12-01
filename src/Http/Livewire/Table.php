@@ -1,6 +1,6 @@
 <?php
 
-namespace AaronNeonDigital\LivewireTables\Views\Components;
+namespace AaronNeonDigital\LivewireTables\Http\Livewire;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Contracts\View\View;
 use Illuminate\Database\Eloquent\Builder;
@@ -49,6 +49,6 @@ abstract class Table extends Component
 
     public function render(): View
     {
-        return view('livewire-tables::table');
+        return view('storefront::livewire.table');
     }
 }

@@ -2,17 +2,13 @@
 
 namespace AaronNeonDigital\LivewireTables\Providers;
 
-use AaronNeonDigital\LivewireTables\Views\Components\Columns\Column;
-use AaronNeonDigital\LivewireTables\Views\Components\Columns\NumberColumn;
-use AaronNeonDigital\LivewireTables\Views\Components\Table;
+use AaronNeonDigital\LivewireTables\Http\Livewire\Table;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
 
 class LivewireTablesServiceProvider extends ServiceProvider
 {
-    protected $root = __DIR__ . '/..';
-
     /**
      * Bootstrap services.
      *
@@ -20,22 +16,12 @@ class LivewireTablesServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-//        $this->loadViewsFrom(__DIR__.'/../resources/views', 'l-tables');
 
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'livewire-tables');
 
-        if ($this->app->runningInConsole()) {
-            $this->publishes([
-                '../src/Views/Components/' => app_path('View/Components'),
-                '../resources/views/components/' => resource_path('views/components'),
-            ], 'views');
-        }
-
-        Livewire::component('columns.column', Column::class);
-        Livewire::component('columns.number-column', NumberColumn::class);
         Livewire::component('table', Table::class);
 
         // Blade Components
-        Blade::componentNamespace('AaronNeonDigital\\LivewireTables\\views', 'livewire-tables');
+        Blade::componentNamespace('AaronNeonDigital\\LivewireTables\\Views\\Components', 'livewire-tables');
     }
 }
