@@ -2,7 +2,7 @@
 
 namespace AaronNeonDigital\LivewireTables\Views\Components\Columns;
 
-class Column extends \AaronNeonDigital\LivewireTables\Column
+class Column extends \AaronNeonDigital\LivewireTables\Views\Components\Column
 {
     public string $component = 'livewire-tables::columns.column';
 
