@@ -1,6 +1,6 @@
 <?php
 
-namespace AaronNeonDigital\LivewireTables\Views\Components;
+namespace AaronNeonDigital\LivewireTables\View\Components;
 
 abstract class Column
 {
@@ -69,11 +69,6 @@ abstract class Column
         $this->sortable = true;
 
         return $this;
-    }
-
-    public function render()
-    {
-        return view('livewire-tables::'.$this->component);
     }
 
 }

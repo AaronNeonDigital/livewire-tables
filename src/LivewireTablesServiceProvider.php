@@ -9,8 +9,6 @@ use Livewire\Livewire;
 
 class LivewireTablesServiceProvider extends ServiceProvider
 {
-    protected string $root = __DIR__ . '/../..';
-
     /**
      * Bootstrap services.
      *
@@ -19,7 +17,6 @@ class LivewireTablesServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'livewire-tables');
-//        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'livewire-tables');
 
         $this->registerLivewireComponents();
     }
@@ -29,6 +26,6 @@ class LivewireTablesServiceProvider extends ServiceProvider
         Livewire::component('table', Table::class);
 
         // Blade Components
-        Blade::componentNamespace('AaronNeonDigital\\LivewireTables\\Views\\Components', 'livewire-tables');
+        Blade::componentNamespace('AaronNeonDigital\\LivewireTables\\View\\Components', 'livewire-tables');
     }
 }

@@ -1,8 +1,8 @@
 <?php
 
-namespace AaronNeonDigital\LivewireTables\Views\Components\Columns;
+namespace AaronNeonDigital\LivewireTables\View\Components\Tables;
 
-use AaronNeonDigital\LivewireTables\Views\Components\Column;
+use AaronNeonDigital\LivewireTables\View\Components\Column;
 
 class NumberColumn extends Column
 {
